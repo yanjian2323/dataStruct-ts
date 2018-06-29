@@ -15,4 +15,10 @@ export default class Stack<T> implements IStack<T>{
     getSize (): number {
         return this.arrayList.getSize();
     }
+    isEmpty (): boolean {
+        return this.arrayList.isEmpty();
+    }
+    getTop (): T {
+        return this.arrayList.get(this.getSize() - 1);
+    }
 }
